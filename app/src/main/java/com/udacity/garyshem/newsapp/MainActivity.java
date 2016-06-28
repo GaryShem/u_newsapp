@@ -104,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected ArrayList<NewsArticle> doInBackground(String... strings) {
-//            android.os.Debug.waitForDebugger();
             // Stop if cancelled
             if (isCancelled()) {
                 return null;
@@ -125,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
                 int responseCode = connection.getResponseCode();
                 if (responseCode != 200) {
                     Log.w(getClass().getName(),
-                            "GoogleBooksAPI request failed. Response Code: " + responseCode);
+                            "TheGuardian api request failed. Response Code: " + responseCode);
                     connection.disconnect();
                     return null;
                 }
