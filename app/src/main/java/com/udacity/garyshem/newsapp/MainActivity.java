@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mQueryField = (EditText)findViewById(R.id.edit_query);
-        mNewsList = (ListView)findViewById(R.id.list_news);
+        mQueryField = (EditText) findViewById(R.id.edit_query);
+        mNewsList = (ListView) findViewById(R.id.list_news);
 
         // Set OnItemClickListener to open the related URL
         // Since we want to do it in user's browser, but don't know which one
